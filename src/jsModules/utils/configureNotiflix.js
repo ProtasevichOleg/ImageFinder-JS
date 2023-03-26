@@ -1,13 +1,13 @@
-// js/notiflixOptions.js
+// jsModules/utils/configureNotiflix.js
+
 import Notiflix from 'notiflix';
 
-Notiflix.Notify.init({
+export default Notiflix.Notify.init({
   width: '280px',
-  position: 'right-top', // right-top, left-top, right-bottom, left-bottom, center-top, center-bottom
-  distance: '10px',
+  position: 'right-bottom',
   fontSize: '14px',
   cssAnimation: true,
-  cssAnimationStyle: 'fade', // fade, zoom
+  cssAnimationStyle: 'fade',
   cssAnimationDuration: 400,
   success: {
     background: '#32c682',
@@ -30,5 +30,3 @@ Notiflix.Notify.init({
     notiflixIconColor: 'rgba(255, 255, 255, 0.5)',
   },
 });
-
-export default Notiflix;

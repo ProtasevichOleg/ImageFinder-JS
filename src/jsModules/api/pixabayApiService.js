@@ -1,11 +1,11 @@
-// js/fetchImages.js
+// jsModules/api/pixabayApiService.js
 
-const BASE_URL = 'https://pixabay.com/api/';
+const API_KEY = '18445929-e575d6623fb59f5ed7bcd7f03';
 
-export async function fetchImagesFromApi(API_KEY, searchQuery, page) {
+export async function fetchImagesFromPixabayApi(searchQuery, page) {
   try {
     const response = await fetch(
-      `${BASE_URL}?key=${API_KEY}&q=${encodeURIComponent(
+      `https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(
         searchQuery
       )}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${page}`
     );
@@ -16,8 +16,8 @@ export async function fetchImagesFromApi(API_KEY, searchQuery, page) {
       );
     }
 
-    const { hits } = await response.json();
-    return hits;
+    const { hits, totalHits } = await response.json();
+    return { hits, totalHits };
   } catch (error) {
     console.error('Error:', error);
     throw error;
