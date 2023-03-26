@@ -1,5 +1,3 @@
-// jsModules/api/pixabayApiService.js
-
 const API_KEY = '18445929-e575d6623fb59f5ed7bcd7f03';
 
 export async function fetchImagesFromPixabayApi(searchQuery, page) {

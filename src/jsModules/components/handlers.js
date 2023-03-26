@@ -1,5 +1,3 @@
-// jsModules/components/handleers.js
-
 import Notiflix from 'notiflix';
 import { refs } from '../../index.js';
 import { clearImageGallery } from './renderers';

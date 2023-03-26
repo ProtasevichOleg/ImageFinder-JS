@@ -1,5 +1,3 @@
-// index.js
-
 import configureNotiflix from './jsModules/utils/configureNotiflix.js';
 import {
   onSearchFormSubmit,

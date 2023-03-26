@@ -1,5 +1,3 @@
-// jsModules/components/fetchers.js
-
 import Notiflix from 'notiflix';
 import { fetchImagesFromPixabayApi } from '../api/pixabayApiService.js';
 import { renderImages } from './renderers.js';
