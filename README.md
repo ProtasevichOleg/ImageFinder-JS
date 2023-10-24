@@ -4,42 +4,7 @@
 
 This project utilizes the following technologies:
 
-<div style="
-background-color: #555555;
-display: flex;
-justify-content: space-around;
-padding: 20px;
-border-radius: 10px;
-"
->
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML5" title="HTML5" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/css-3.svg" alt="CSS3" title="CSS3" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/javascript.svg" alt="JavaScript" title="JavaScript" />
-    </div>
-    <div>
-    <img height="55" src="https://avatars.githubusercontent.com/u/32372333?s=48&v=4" alt="axios" title="axios" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/sass.svg" alt="Sass" title="Sass" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/parcel-icon.svg" alt="Parcel" title="Parcel" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/visual-studio-code.svg" alt="Visual Studio Code" title="Visual Studio Code" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/git-icon.svg" alt="Git" title="Git" />
-    </div>
-    <div>
-    <img height="55" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub" title="GitHub" />
-    </div>
-</div>
+<code><img height="55" src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML5" title="HTML5" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/css-3.svg" alt="CSS3" title="CSS3" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/javascript.svg" alt="JavaScript" title="JavaScript" /></code> <code><img height="55" src="https://avatars.githubusercontent.com/u/32372333?s=48&v=4" alt="axios" title="axios" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/sass.svg" alt="Sass" title="Sass" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/parcel-icon.svg" alt="Parcel" title="Parcel" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/visual-studio-code.svg" alt="Visual Studio Code" title="Visual Studio Code" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/git-icon.svg" alt="Git" title="Git" /></code> <code><img height="55" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub" title="GitHub" /></code>
 
 ## Description
 
