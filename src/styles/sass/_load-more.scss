@@ -1,0 +1,19 @@
+.load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: var(--mainAccentColor);
+  color: var(--btnTextColor);
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--accentHoverColor);
+  }
+}
+
+.hidden {
+  display: none;
+}
