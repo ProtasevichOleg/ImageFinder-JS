@@ -1,9 +1,9 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { showLoadMoreButton } from './loadMoreButton.js';
-import { refs } from '../../index.js';
+import { refs } from '../index.js';
 
-export function renderImageGallery(images, gallery) {
+export function renderImageGallery(images) {
   const markup = images
     .map(image => {
       const {
@@ -16,28 +16,28 @@ export function renderImageGallery(images, gallery) {
         downloads,
       } = image;
       return `
-      <div class="gallery__item">
+      <div class="gallery__card">
         <a href="${largeImageURL}" class="gallery__link" target="_blank">
           <img class="gallery__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
         </a>
-        <div class="info">
-          <div class="info__item">
+        <ul class="card-info">
+          <li class="card-info__item">
             <b>Likes:</b>
             <span>${likes}</span>
-          </div>
-          <div class="info__item">
+          </li>
+          <li class="card-info__item">
             <b>Views:</b>
             <span>${views}</span>
-          </div>
-          <div class="info__item">
+          </li>
+          <li class="card-info__item">
             <b>Comments:</b>
             <span>${comments}</span>
-          </div>
-          <div class="info__item">
+          </li>
+          <li class="card-info__item">
             <b>Downloads:</b>
             <span>${downloads}</span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     `;
     })
@@ -55,22 +55,10 @@ function initLightbox() {
   lightbox.refresh();
 }
 
-function scrollToImages() {
-  const { height: cardHeight } = document
-    .querySelector('.gallery')
-    .firstElementChild.getBoundingClientRect();
-
-  window.scrollBy({
-    top: cardHeight * 0.35,
-    behavior: 'smooth',
-  });
-}
-
 export function renderImages(images) {
   if (images) {
     renderImageGallery(images, refs.galleryEl);
     showLoadMoreButton();
     initLightbox();
-    scrollToImages();
   }
 }

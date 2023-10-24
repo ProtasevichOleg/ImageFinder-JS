@@ -1,23 +1,21 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Галерея</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Image Finder</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <!-- <h1>Пошук картинок</h1> -->
         <form class="search-form">
           <input
             type="text"
             class="search-form__input"
             placeholder="Search images..."
           />
-          <button type="submit" class="search-form__submit"></button>
+          <button type="submit" class="search-form__submit-btn"></button>
         </form>
       </div>
     </header>
@@ -25,11 +23,10 @@
     <main>
       <div class="container">
         <div class="gallery"></div>
-        <button class="load-more hidden">Load More</button>
-        <!-- Додайте цю кнопку -->
+        <button class="load-more-btn hidden">Load More</button>
       </div>
     </main>
     <script src="../node_modules/notiflix/dist/notiflix-3.2.6.min.js"></script>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

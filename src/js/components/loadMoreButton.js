@@ -1,4 +1,4 @@
-import { refs } from '../..';
+import { refs } from '../index';
 
 export function showLoadMoreButton() {
   refs.loadMoreBtnEl.classList.remove('hidden');
