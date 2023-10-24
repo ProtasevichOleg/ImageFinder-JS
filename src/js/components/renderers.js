@@ -47,7 +47,18 @@ export function renderImageGallery(images) {
 }
 
 export function clearImageGallery(gallery) {
-  refs.galleryEl.innerHTML = '';
+  gallery.innerHTML = '';
+}
+
+export function renderGreetMessage(gallery) {
+  gallery.innerHTML = `
+    <div class="greeting-message-container">
+      <h1 class="main-title">Image Finder</h1>
+      <b class="greeting-message">Hi! Here you can find any image you want!</b>
+      <p class="instructions">
+        To search, just enter your query into the field above and press enter.
+      </p>
+    </div>`;
 }
 
 function initLightbox() {
@@ -56,9 +67,9 @@ function initLightbox() {
 }
 
 export function renderImages(images) {
-  if (images) {
-    renderImageGallery(images, refs.galleryEl);
-    showLoadMoreButton();
-    initLightbox();
-  }
+  if (!images) return;
+
+  renderImageGallery(images, refs.galleryEl);
+  showLoadMoreButton();
+  initLightbox();
 }

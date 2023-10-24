@@ -1,6 +1,6 @@
 import Notiflix from 'notiflix';
 import { refs } from '../index';
-import { clearImageGallery } from './renderers';
+import { clearImageGallery, renderGreetMessage } from './renderers';
 import { fetchAndRenderImages } from './fetchers';
 import { hideLoadMoreButton } from './loadMoreButton';
 

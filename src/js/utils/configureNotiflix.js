@@ -2,11 +2,11 @@ import Notiflix from 'notiflix';
 
 export default Notiflix.Notify.init({
   width: '280px',
-  position: 'right-bottom',
+  position: 'right-top',
   fontSize: '14px',
   cssAnimation: true,
   cssAnimationStyle: 'fade',
-  cssAnimationDuration: 400,
+  cssAnimationDuration: 200,
   success: {
     background: '#32c682',
     textColor: '#fff',

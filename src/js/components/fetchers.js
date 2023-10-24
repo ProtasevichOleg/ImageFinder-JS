@@ -1,6 +1,6 @@
 import Notiflix from 'notiflix';
 import { fetchImagesFromPixabayApi } from '../api/pixabayApiService.js';
-import { renderImages } from './renderers.js';
+import { renderImages, renderGreetMessage } from './renderers.js';
 import { refs } from '../index.js';
 import { hideLoadMoreButton } from './loadMoreButton.js';
 
@@ -15,6 +15,7 @@ export async function fetchImages() {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
       );
+      renderGreetMessage(refs.galleryEl);
       return { totalHits: 0, error: true };
     }
 
