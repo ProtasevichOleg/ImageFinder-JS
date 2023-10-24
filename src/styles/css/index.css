@@ -13,7 +13,7 @@
 :root {
   --mainAccentColor: rgb(75, 60, 187);
   --accentHoverColor: rgb(90, 75, 202);
-  --btnTextColor: #ffffff;
+  --onAccentTextColor: #ffffff;
   --mainBgColor: rgb(248, 246, 243);
 }
 
@@ -35,6 +35,20 @@ main {
   background-color: var(--mainBgColor);
   padding: 20px 0;
   flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--mainAccentColor);
+}
+
+.copyright {
+  font-size: 14px;
+  color: var(--onAccentTextColor);
 }
 
 .container {
@@ -136,7 +150,7 @@ main {
   padding: 10px 30px;
   font-size: 18px;
   background-color: var(--mainAccentColor);
-  color: var(--btnTextColor);
+  color: var(--onAccentTextColor);
   cursor: pointer;
   border: none;
   transition: background-color 0.3s;
